@@ -1,0 +1,10 @@
+{
+  "name": "totp",
+  "version": "0.0.1",
+  "description": "TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vitest": "^0.29.3"
+  }
+}
