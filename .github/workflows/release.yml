@@ -1,4 +1,4 @@
-name: Build, test and publish npm package
+name: Publish npm release
 
 on:
   release:
