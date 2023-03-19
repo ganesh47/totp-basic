@@ -1,6 +1,6 @@
 {
   "name": "totp",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
   "type": "module",
   "devDependencies": {
@@ -10,5 +10,8 @@
   "scripts": {
     "test": "vitest",
     "coverage": "vitest run --coverage"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
   }
 }
