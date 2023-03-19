@@ -1,5 +1,5 @@
 {
-  "name": "totp",
+  "name": "@ganesh47/totp",
   "version": "0.0.0",
   "description": "TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
   "type": "module",
