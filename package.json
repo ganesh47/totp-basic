@@ -1,6 +1,6 @@
 {
   "name": "totp-basic",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A Basic TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
   "type": "module",
   "main": "src/index.js",
@@ -11,6 +11,7 @@
     "@cloudflare/workers-types": "^4.20230307.0"
   },
   "scripts": {
+    "run:tsnode": "node --no-warnings --loader ts-node/esm.mjs index.ts",
     "prepublish": "tsc",
     "build": "tsc",
     "test": "vitest",
