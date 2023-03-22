@@ -2,7 +2,7 @@ name: Publish npm release
 
 on:
   release:
-    types: [ published, edited, created, prereleased, released, unpublished ]
+    types: [ released ]
 jobs:
   publish-worker:
     runs-on: ubuntu-latest
