@@ -1,7 +1,7 @@
 {
-  "name": "@ganesh47/totp",
+  "name": "totp-basic",
   "version": "0.0.1",
-  "description": "TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
+  "description": "A Basic TOTP (Time-based One-time Password Algorithm) implementation in TypeScript for use with cloudflare-workers",
   "type": "module",
   "devDependencies": {
     "typescript": "^5.0.2",
@@ -12,7 +12,26 @@
     "test": "vitest",
     "coverage": "vitest run --coverage"
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ganesh47/totp-basic.git"
+  },
+  "homepage": "https://github.com/ganesh47/totp-basic#readme",
+  "bugs": {
+    "url": "https://github.com/ganesh47/totp-basic/issues",
+    "email": "22994026+ganesh47@users.noreply.github.com"
+  },
+  "license": "Apache-2.0",
+  "author": "Ganesh Raman",
+  "contributors": [
+    "Ganesh Raman "
+  ],
+  "keywords": [
+    "totp",
+    "time-based",
+    "one-time",
+    "cloudflare",
+    "workers",
+    "typescript"
+  ]
 }
