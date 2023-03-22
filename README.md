@@ -1,4 +1,4 @@
-# totp
+# totp-basic
 A totp library in `typescript` that requires no external libraries.
 
 Uses crypto.subtle API support, so that it can be used in browsers, as-is!
