@@ -6,13 +6,13 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20230307.0",
     "typescript": "^5.0.2",
-    "vitest": "^0.29.3",
-    "@cloudflare/workers-types": "^4.20230307.0"
+    "vitest": "^0.29.3"
   },
   "scripts": {
     "run:tsnode": "node --no-warnings --loader ts-node/esm.mjs index.ts",
-    "prepublish": "mv dist/src/* dist/ && rm -rf dist/src",
+    "prepublishOnly": "mv dist/src/* dist/ && rm -rf dist/src",
     "build": "tsc",
     "test": "vitest",
     "coverage": "vitest run --coverage"
