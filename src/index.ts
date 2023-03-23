@@ -1,4 +1,4 @@
-import * as crypto from 'crypto';
+const { subtle } = require('crypto').webcrypto;
 
 export const generateTOTP = async (secret: string): Promise<string> => {
     const time = Math.floor(Date.now() / 1000); // get the current time in seconds
@@ -9,14 +9,14 @@ export const generateTOTP = async (secret: string): Promise<string> => {
     counter[6] = (timeStep >> 8) & 0xff;
     counter[5] = (timeStep >> 16) & 0xff;
     counter[4] = (timeStep >> 24) & 0xff;
-    const hmacKey = await crypto.subtle.importKey(
+    const hmacKey = await subtle.importKey(
         'raw', // format of the secret key
         new TextEncoder().encode(secret), // the secret key as a byte array
         { name: 'HMAC', hash: { name: 'SHA-1' } }, // algorithm to use for HMAC
         false, // not extractable
         ['sign'] // only need the key for signing
     );
-    const hmacResult = await crypto.subtle.sign(
+    const hmacResult = await subtle.sign(
         'HMAC', // HMAC algorithm
         hmacKey,
         counter // the counter as data to sign
