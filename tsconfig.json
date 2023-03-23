@@ -1,13 +1,19 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "module": "esnext",
-    "target": "es2018",
+    "module": "es2020",
+    "target": "es2020",
     "declaration": true,
     "outDir": "dist",
+    "strict": true,
+    "esModuleInterop": true
   },
   "exclude": [
     "node_modules",
     "dist"
+  ],
+  "types": [
+    "node",
+    "crypto-browserify",
   ]
 }
